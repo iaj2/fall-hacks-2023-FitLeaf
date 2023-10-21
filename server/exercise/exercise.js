@@ -25,4 +25,5 @@ class Exercise {
     }
   }
 
-  module.exports = Exercise;
+
+module.exports = Exercise;
