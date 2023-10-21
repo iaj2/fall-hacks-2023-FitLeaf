@@ -1,6 +1,6 @@
-const BeginnerExercise = require('./beginnerExercise');
-const IntermediateExercise = require('./intermediateExercise')
-const AdvancedExercise = require('./advancedExercise')
+const BeginnerExercise = require('../exercise/beginnerExercise');
+const IntermediateExercise = require('../exercise/intermediateExercise')
+const AdvancedExercise = require('../exercise/advancedExercise')
 
 
 const exercises = {

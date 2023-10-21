@@ -17,13 +17,10 @@ class Exercise {
     }
   
     getRandomReps() {
-      if (this.lowerReps && this.upperReps) {
-        return Math.floor(Math.random() * (this.upperReps - this.lowerReps + 1)) + this.lowerReps;
-      } else {
-        return null;
-      }
+   
+      return Math.floor(Math.random() * (this.upperReps - this.lowerReps + 1)) + this.lowerReps;
     }
-  }
+}
 
 
 module.exports = Exercise;

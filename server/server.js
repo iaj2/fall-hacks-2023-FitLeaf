@@ -11,12 +11,7 @@ app.use(session({
     saveUninitialized: true
 }))
 
-app.use(express.json);
-
-const exercises = [
-    Exercise('pushups', 10, 40, 10, 40),
-    Exercise('jumping jacks', 30, 90, )
-]
+app.use(express.json());
 
 app.post('/set-level', (req, res) => {
     const { level } = req.body;
@@ -32,6 +27,11 @@ app.get('/random-exercise', (req, res) => {
   const { level } = req.session;
   if (level && isValidLevel(level)) {
     const exercise = getRandomExercise(level);
+    res.status(200).json({
+        name: exercise.getName(),
+        duration: exercise.getRandomDuration(),
+        reps: exercise.getRandomReps()
+    })
   } else {
     res.status(400).json({ error: 'Fitness level not set.' });
   }
