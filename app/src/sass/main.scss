@@ -1,5 +1,15 @@
-$primary-color: steelblue;
+$primary-color: #e1fad8;
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter/Inter-VariableFont_slnt,wght.ttf') format('woff2');
+    font-weight: 100 900;
+  }
+
+
 
 body {
     background-color: $primary-color;
+    font-family: 'Inter', sans-serif;
+
 }
