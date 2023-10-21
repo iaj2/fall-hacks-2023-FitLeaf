@@ -5,37 +5,37 @@ const AdvancedExercise = require('../exercise/advancedExercise')
 
 const exercises = {
     beginner: [
-        BeginnerExercise('Push Ups', 8, 15),
-        BeginnerExercise('Jumping Jacks', 20, 30),
-        BeginnerExercise('Squats', 15, 25),
-        BeginnerExercise('Burpees', 5, 10),
-        BeginnerExercise('Lunges', 6, 10),
-        BeginnerExercise('Crunches', 10, 15),
-        BeginnerExercise('Squat Jumps', 3, 5),
-        BeginnerExercise('High Knees', 20, 30),
-        BeginnerExercise('Mountain Climbers', 20, 30)
+        new BeginnerExercise('Push Ups', 8, 15),
+        new BeginnerExercise('Jumping Jacks', 20, 30),
+        new BeginnerExercise('Squats', 15, 25),
+        new BeginnerExercise('Burpees', 5, 10),
+        new BeginnerExercise('Lunges', 6, 10),
+        new BeginnerExercise('Crunches', 10, 15),
+        new BeginnerExercise('Squat Jumps', 3, 5),
+        new BeginnerExercise('High Knees', 20, 30),
+        new BeginnerExercise('Mountain Climbers', 20, 30)
     ],
     intermediate: [
-        IntermediateExercise('Push Ups', 15, 25),
-        IntermediateExercise('Jumping Jacks', 30, 40),
-        IntermediateExercise('Squats', 20, 30),
-        IntermediateExercise('Burpees', 10, 15),
-        IntermediateExercise('Lunges', 8, 12),
-        IntermediateExercise('Crunches', 15, 20),
-        IntermediateExercise('Squat Jumps', 4, 6),
-        IntermediateExercise('High Knees', 30, 40),
-        IntermediateExercise('Mountain Climbers', 30, 40)
+        new IntermediateExercise('Push Ups', 15, 25),
+        new IntermediateExercise('Jumping Jacks', 30, 40),
+        new IntermediateExercise('Squats', 20, 30),
+        new IntermediateExercise('Burpees', 10, 15),
+        new IntermediateExercise('Lunges', 8, 12),
+        new IntermediateExercise('Crunches', 15, 20),
+        new IntermediateExercise('Squat Jumps', 4, 6),
+        new IntermediateExercise('High Knees', 30, 40),
+        new IntermediateExercise('Mountain Climbers', 30, 40)
     ],
     advanced: [
-        AdvancedExercise('Push Ups', 20, 35),
-        AdvancedExercise('Jumping Jacks', 40, 50),
-        AdvancedExercise('Squats', 30, 40),
-        AdvancedExercise('Burpees', 15, 20),
-        AdvancedExercise('Lunges', 10, 15),
-        AdvancedExercise('Crunches', 20, 30),
-        AdvancedExercise('Squat Jumps', 6, 8),
-        AdvancedExercise('High Knees', 40, 50),
-        AdvancedExercise('Mountain Climbers', 40, 50)
+        new AdvancedExercise('Push Ups', 20, 35),
+        new AdvancedExercise('Jumping Jacks', 40, 50),
+        new AdvancedExercise('Squats', 30, 40),
+        new AdvancedExercise('Burpees', 15, 20),
+        new AdvancedExercise('Lunges', 10, 15),
+        new AdvancedExercise('Crunches', 20, 30),
+        new AdvancedExercise('Squat Jumps', 6, 8),
+        new AdvancedExercise('High Knees', 40, 50),
+        new AdvancedExercise('Mountain Climbers', 40, 50)
     ]
     
   };
