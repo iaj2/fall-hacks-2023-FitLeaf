@@ -1,31 +1,84 @@
-.button {
-    background-color: black;
-    color: #BBFFB4;
+@import './main.scss';
+
+.level-section-container{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-height: 100%;
+  padding: 10px;
+  padding-bottom: 40px;
   
-    margin-top: 150px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 40px;
-    width: 275px;
-    height: 125px;
+  .header-wrapper {
+    height: fit-content;
+    .fitleaf-header {
+      text-align: center;
+      font-size: 125px;
+      padding: 0;
+      margin: 0;
+      
+      img {
+        margin-left: 15px;
+        margin-bottom: 10px;
+        transform: scale(2);
+      }
+    }
   }
   
-  .header {
-    text-align: center;
-    font-size: 125px;
-    margin: 100px;
+  .tagline-wrapper {
+    margin-top: 10px;
+    height: fit-content;
+    .fitleaf-tagline {
+      text-align: center;
+      font-size: 40px;
+      padding: 0;
+      margin: 0;
+
+    }
   }
   
-  h2 {
-    text-align: center;
-    font-size: 45px;
-    margin-top: -90px;
+  .level-header-wrapper {
+    margin-top: 80px;
+
+    height: fit-content;
+    .fitness-level-header {
+      text-align: center;
+      font-size: 35px;
+      padding: 0;
+      margin: 0;
+
+    }
   }
   
-  h3 {
-    text-align: center;
-    font-size: 35px;
-    margin-top: 150px;
+  
+
+  .buttons-container {
+    margin-top: 40px;
+    padding: 0;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    .buttons-wrapper{
+      display: flex;
+      width: 1000px;
+      justify-content: space-around;
+      
+      button {
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+        border: 0px;
+        font-size: 35px;
+        width: 245px;
+        height: 125px;
+      }
+
+    }
   }
   
+}
+
