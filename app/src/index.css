@@ -28,3 +28,13 @@ h3 {
   font-size: 35px;
   margin-top: 150px;
 }
+
+
+button:hover {
+  opacity: 0.5;
+  cursor: url(leaf-pointer.png), default;
+}
+
+html, body {
+  cursor: url(leaf.png), default;
+}
