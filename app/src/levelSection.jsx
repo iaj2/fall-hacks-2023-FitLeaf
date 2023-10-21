@@ -1,7 +1,7 @@
 import React from 'react';
-import "./sass/exerciseSection.scss"
+import "./sass/levelSection.scss"
 
-function WorkoutSection() {
+function LevelSection() {
  const getMessage = () => {
     return "FitLeaf";
   };
@@ -20,4 +20,4 @@ function WorkoutSection() {
   );
 }
 
-export default WorkoutSection;
+export default LevelSection;

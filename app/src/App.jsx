@@ -1,11 +1,16 @@
 import React from 'react';
-import WorkoutSection from './WorkoutSection';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LevelSection from './levelSection';
 
 function App() {
   return (
-    <div>
-      <WorkoutSection />
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LevelSection />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
