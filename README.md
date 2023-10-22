@@ -57,8 +57,5 @@ This will start the development server for the frontend and the Express.js serve
 
 - Your main challenge is to complete the specified number of repetitions within the given time for each challenge.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
-
 ## Authors
 - Isaac James, Jake Choi, Leo Zhi
