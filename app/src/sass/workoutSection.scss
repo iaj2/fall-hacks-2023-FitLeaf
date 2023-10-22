@@ -47,9 +47,7 @@
             }
     
             
-            .flip {
-                transform: rotateY(180deg);
-            }
+           
             
             /* Additional styles for front and back faces if needed */
             .leaf-container img {
@@ -68,6 +66,7 @@
                 transform: rotateY(180deg);
         
         }
+
     }
     
 }

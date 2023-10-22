@@ -35,13 +35,13 @@ const WorkoutSection = () => {
 
         if (time > 0) {
             interval = setInterval(() => {
-                setTime(prev => prev - intervalTime);
+                setTime(prev => prev - 10*intervalTime);
             }, intervalTime);
         } else if (time <=0) {
             clearInterval(interval) // Clear the interval before making a new request
             setTime(0)
             console.log(exercisesCompleted)
-            if (exercisesCompleted > 1) {
+            if (exercisesCompleted >= 1) {
                 setFlipped(true)
 
                 setTimeout(() => {
