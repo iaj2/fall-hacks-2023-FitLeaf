@@ -36,41 +36,56 @@
 
         .leaf-container {
             perspective: 1000px;
-            width: 50px;
-            height: 50px;
-            transition: all 0.8 ease;
-            transform-style: preserve-3d;
-
-            img {
-                height: 100%;
-                width: 100%;
-            }
-    
-            
-           
-            
-            /* Additional styles for front and back faces if needed */
-            .leaf-container img {
-                /* Front face styles */
-                width: 100px; /* Adjust the width according to your needs */
-            }
-            
-            .flip img {
-                /* Back face styles */
-                transform: rotateY(180deg);
-            }   
-
-        }
-    
-        .leaf-container.flip{
-                transform: rotateY(180deg);
-        
+            width: 100px;
+            height: 100px;
+            margin-top: 15px;
+            // transition: all 0.8 ease;
+            // transform-style: preserve-3d;      
         }
 
+        .timer-bar {
+            background-color:#008000;
+            height: 30px;
+        }
     }
-    
 }
 
+.leafImg{
+    height: 100%;
+    width: 100%;
+}
 
-  
-  
+.leafImg.pos1 {
+    transform: rotateY(0deg);
+    transition: all 500ms ease;
+}
+
+.leafImg.pos2 {
+    transform: rotateY(75deg);
+    transition: all 500ms ease;
+
+}
+
+.leafImg.pos3 {
+    transform: rotateY(125deg);
+    transition: all 500ms ease;
+
+}
+
+.leafImg.pos4 {
+    transform: rotateY(180deg);
+    transition: all 500ms ease;
+
+}
+
+.leafImg.pos5 {
+    transform: rotateY(235deg);
+    transition: all 500ms ease;
+
+}
+
+.leafImg.pos6 {
+    transform: rotateY(315deg);
+    transition: all 1 ease;
+
+}
