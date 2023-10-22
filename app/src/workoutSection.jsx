@@ -62,9 +62,9 @@ const WorkoutSection = () => {
     return (
         <div className='workout-section-container'>
             <div className='container'>
-            <p>Exercise: {exerciseData? exerciseData.name: ''}</p>
-            <p>Reps: {exerciseData? exerciseData.reps : ''}</p>
-            <p>Time: {(time / 1000)} </p>
+            <p><b>Exercise:</b> {exerciseData? exerciseData.name: ''}</p>
+            <p><b>Reps:</b> {exerciseData? exerciseData.reps : ''}</p>
+            <p><b>Time:</b> {(time / 1000)} </p>
             <div className={`leaf-container ${isFlipped? 'flip' : ''}`}>
                
                 <img src={LeafIcon}></img>
