@@ -42,8 +42,12 @@ const WorkoutSection = () => {
             setTime(0)
             console.log(exercisesCompleted)
             if (exercisesCompleted > 1) {
-                setFlipped(true);               
+                setFlipped(true)
 
+                setTimeout(() => {
+                    setFlipped(false)
+                }, 100)               
+                
             }
             setExercisesCompleted(exercisesCompleted + 1)
             getExerciseData();
@@ -62,9 +66,8 @@ const WorkoutSection = () => {
             <p>Reps: {exerciseData? exerciseData.reps : ''}</p>
             <p>Time: {(time / 1000)} </p>
             <div className={`leaf-container ${isFlipped? 'flip' : ''}`}>
-                <div className='front'>
-                    <img src={LeafIcon}></img>
-                </div>
+               
+                <img src={LeafIcon}></img>
              </div>
                     
             <button className='home-button' onClick={()=>navigate('/')}>Home</button>
