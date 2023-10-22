@@ -6,4 +6,4 @@ class AdvancedExercise extends Exercise {
     }
 }
 
-module.exports = IntermediateExercise
+module.exports = AdvancedExercise;

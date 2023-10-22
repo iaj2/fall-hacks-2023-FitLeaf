@@ -3,6 +3,23 @@ import "./sass/levelSection.scss"
 import LeafIcon from './assets/leaf-icon.png'
 
 function LevelSection() {
+  const setFitnessLevel = (level) => {
+    fetch('api/set-level', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ level: level }),
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data); // You can handle the response from the backend here
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  };
+
 
 
   return (
@@ -19,9 +36,9 @@ function LevelSection() {
       
       <div className='buttons-container'>
         <div className='buttons-wrapper'>
-        <button className="beginner-button" >Beginner</button>
-        <button className="intermediate-button" >Intermediate</button>
-        <button className="advanced-button">Advanced</button>
+          <button className="beginner-button" onClick={() => setFitnessLevel('beginner')}>Beginner</button>
+          <button className="intermediate-button" onClick={() => setFitnessLevel('intermediate')}>Intermediate</button>
+          <button className="advanced-button" onClick={() => setFitnessLevel('advanced')}>Advanced</button>
         </div>
         
       </div>

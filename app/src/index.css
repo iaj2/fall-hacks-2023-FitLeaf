@@ -7,6 +7,3 @@ button:hover {
   cursor: url(./assets/leaf-pointer.png), default;
 }
 
-html, body {
-  cursor: url(./assets/leaf.png), default;
-}
