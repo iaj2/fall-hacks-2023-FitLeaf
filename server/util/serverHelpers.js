@@ -20,7 +20,7 @@ const exercises = {
         new IntermediateExercise('Jumping Jacks', 30, 40),
         new IntermediateExercise('Squats', 20, 30),
         new IntermediateExercise('Burpees', 10, 15),
-        new IntermediateExercise('Lunges', 8, 12),
+        new IntermediateExercise('Lunges', 12, 25),
         new IntermediateExercise('Crunches', 15, 20),
         new IntermediateExercise('Squat Jumps', 4, 6),
         new IntermediateExercise('High Knees', 30, 40),
@@ -31,7 +31,7 @@ const exercises = {
         new AdvancedExercise('Jumping Jacks', 40, 50),
         new AdvancedExercise('Squats', 30, 40),
         new AdvancedExercise('Burpees', 15, 20),
-        new AdvancedExercise('Lunges', 10, 15),
+        new AdvancedExercise('Lunges', 20, 30),
         new AdvancedExercise('Crunches', 20, 30),
         new AdvancedExercise('Squat Jumps', 6, 8),
         new AdvancedExercise('High Knees', 40, 50),
@@ -52,8 +52,10 @@ function isValidLevel(level) {
 }
 
 function getRandomExercise(level) {
-    const randomIndex = Math.floor(Math.random() * exercises.length);
+    //console.log(level)
+    //console.log(exercises[level])
+    const randomIndex = Math.floor(Math.random() * exercises[level].length);
     return exercises[level][randomIndex];
 }
 
-module.exports = isValidLevel;
+module.exports = {isValidLevel, getRandomExercise} ;

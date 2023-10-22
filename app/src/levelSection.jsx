@@ -1,9 +1,12 @@
 import React from 'react';
 import "./sass/levelSection.scss"
 import LeafIcon from './assets/leaf-icon.png'
+import { useNavigate } from 'react-router-dom'
 
 function LevelSection() {
-  const setFitnessLevel = (level) => {
+  const navigate = useNavigate()
+
+  const handleButtonClick = (level) => {
     fetch('api/set-level', {
       method: 'POST',
       headers: {
@@ -14,6 +17,7 @@ function LevelSection() {
       .then(response => response.json())
       .then(data => {
         console.log(data); // You can handle the response from the backend here
+        navigate('/info')
       })
       .catch(error => {
         console.error('Error:', error);
@@ -36,9 +40,9 @@ function LevelSection() {
       
       <div className='buttons-container'>
         <div className='buttons-wrapper'>
-          <button className="beginner-button" onClick={() => setFitnessLevel('beginner')}>Beginner</button>
-          <button className="intermediate-button" onClick={() => setFitnessLevel('intermediate')}>Intermediate</button>
-          <button className="advanced-button" onClick={() => setFitnessLevel('advanced')}>Advanced</button>
+          <button className="beginner-button" onClick={() => handleButtonClick('beginner')}>Beginner</button>
+          <button className="intermediate-button" onClick={() => handleButtonClick('intermediate')}>Intermediate</button>
+          <button className="advanced-button" onClick={() => handleButtonClick('advanced')}>Advanced</button>
         </div>
         
       </div>

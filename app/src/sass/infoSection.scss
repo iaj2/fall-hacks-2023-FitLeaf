@@ -1,0 +1,42 @@
+.info-section-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .info-container{
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 600px;
+        height: 400px;
+        padding: 20px;
+        background-color: #55c977;
+        box-shadow: 5px 5px 5px 0px rgba(104, 104, 104, 0.2);
+
+        p {
+            font-size: 18px;
+        }
+        .description {
+            width: 550px;
+        }
+
+        .good-luck {
+            font-weight: 800;
+        }
+        .continue-button {
+            width: 150px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 15px;
+        }
+    }
+    
+
+}

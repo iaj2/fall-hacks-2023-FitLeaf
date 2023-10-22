@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LevelSection from './levelSection';
 import InfoSection from './infoSection';
+import WorkoutSection from './workoutSection';
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<LevelSection />} />
-          <Route path="/" element={<InfoSection />} />
+          <Route path="/info" element={<InfoSection />} />
+          <Route path="/workout" element={<WorkoutSection />} />
         </Routes>
       </Router>
     </>

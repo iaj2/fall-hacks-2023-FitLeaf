@@ -1,13 +1,13 @@
 const express = require('express');
 const session = require('express-session');
-const isValidLevel = require('./util/serverHelpers')
+const helpers = require('./util/serverHelpers')
 const app = express()
 
 const PORT = 5000;
 
 app.use(session({
     secret: 'randomstring',
-    resave: false,
+    resave: true,
     saveUninitialized: true
 }))
 
@@ -15,9 +15,9 @@ app.use(express.json());
 
 app.post('/set-level', (req, res) => {
     const { level } = req.body;
-    if (level && isValidLevel(level)) {
+    if (level && helpers.isValidLevel(level)) {
         req.session.level = level;
-        console.log(req.session.level)
+        //console.log(req.session.level)
         res.status(200).json({message: `Fitness level set to ${level}`})
     } else {
         res.status(400).json({ error: 'Invalid fitness level.' });
@@ -25,9 +25,9 @@ app.post('/set-level', (req, res) => {
 })
 
 app.get('/random-exercise', (req, res) => {
-  const { level } = req.session.level;
-  if (level && isValidLevel(level)) {
-    const exercise = getRandomExercise(level);
+  console.log(req.session.level)
+  if ( req.session.level && helpers.isValidLevel(req.session.level)) {
+    const exercise = helpers.getRandomExercise(req.session.level);
     res.status(200).json({
         name: exercise.getName(),
         duration: exercise.getRandomDuration(),

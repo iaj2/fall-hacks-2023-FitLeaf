@@ -1,0 +1,24 @@
+.workout-section-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .workout-container {
+        height: 400px;
+        width: 400px;
+        background-color: #55c977;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+
+        p {
+            font-size: 20px;
+            font-weight: 900;
+        }
+    }
+}
