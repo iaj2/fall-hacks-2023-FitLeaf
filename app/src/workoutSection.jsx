@@ -35,7 +35,7 @@ const WorkoutSection = () => {
 
         if (time > 0) {
             interval = setInterval(() => {
-                setTime(prev => prev - 10*intervalTime);
+                setTime(prev => prev - intervalTime);
             }, intervalTime);
         } else if (time <=0) {
             clearInterval(interval) // Clear the interval before making a new request
