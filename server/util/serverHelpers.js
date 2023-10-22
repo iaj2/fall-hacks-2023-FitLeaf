@@ -27,7 +27,7 @@ const exercises = {
         new IntermediateExercise('Mountain Climbers', 30, 40)
     ],
     advanced: [
-        new AdvancedExercise('Push Ups', 20, 35),
+        new AdvancedExercise('Push Ups', 25, 35),
         new AdvancedExercise('Jumping Jacks', 40, 50),
         new AdvancedExercise('Squats', 30, 40),
         new AdvancedExercise('Burpees', 15, 20),
